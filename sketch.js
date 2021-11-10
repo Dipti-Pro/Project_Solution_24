@@ -45,7 +45,9 @@ function setup() {
     120
   );
   
-  arrow = new PlayerArrow(playerArcher.body.position.x, playerArcher.body.position.y, 100, 10);
+  
+  //make arrow here
+
   
 }
 
@@ -71,8 +73,10 @@ function draw() {
   playerArcher.display();
   computerArcher.display()
   arrow.display()
+  
+  //shoot the arrow
   if(keyCode === 32){
-   arrow.shoot(playerArcher.body.angle);
+   
   }
 }
 
